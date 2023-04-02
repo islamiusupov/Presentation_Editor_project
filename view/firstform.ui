@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>792</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>7</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+   background-color: rgb(223, 223, 223);
+   
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="slide_show_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>75</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 62, 62);
+background-color: rgb(223, 223, 223);
+border-radius: 0px 0px 5px 5px;</string>
+    </property>
+    <property name="text">
+     <string>Слайд-шоу</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editor_btn">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>75</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 62, 62);
+background-color: rgb(223, 223, 223);
+border-radius: 0px 0px 5px 5px;</string>
+    </property>
+    <property name="text">
+     <string>Редактор</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>791</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Слайд&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid #C4C4C3;
+top: -1px;
+background: rgb(255, 255, 255);
+color: rgb(85, 62, 62);</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <property name="styleSheet">
+      <string notr="true">QTabBar::tab {                  
+            background: #00ff00;                         
+            color: #000000;                              
+            border-width: 2px;                             
+            border-style: solid;                           
+            border-color: #0000ff;                             
+            border-bottom-color: #00ffffff;                
+            border-top-left-radius: 6px;                   
+            border-top-right-radius: 6px;                  
+            min-height: 40px;                              
+            padding: 2px;}</string>
+     </property>
+     <attribute name="title">
+      <string>Слайд 1</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <property name="styleSheet">
+      <string notr="true">QTabBar::tab {                  
+            background: #00ff00;                         
+            color: #000000;                              
+            border-width: 2px;                             
+            border-style: solid;                           
+            border-color: #0000ff;                             
+            border-bottom-color: #00ffffff;                
+            border-top-left-radius: 6px;                   
+            border-top-right-radius: 6px;                  
+            min-height: 40px;                              
+            padding: 2px;}</string>
+     </property>
+     <attribute name="title">
+      <string>Слайд 2</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="add_slide_btn">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>0</y>
+      <width>75</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 62, 62);
+background-color: rgb(223, 223, 223);
+border-radius: 0px 0px 5px 5px;</string>
+    </property>
+    <property name="text">
+     <string>Добавить слайд</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="remove_slide_btn">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>0</y>
+      <width>75</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 62, 62);
+background-color: rgb(223, 223, 223);
+border-radius: 0px 0px 5px 5px;</string>
+    </property>
+    <property name="text">
+     <string>Удалить слайд</string>
+    </property>
+   </widget>
+   <zorder>editor_btn</zorder>
+   <zorder>slide_show_btn</zorder>
+   <zorder>tabWidget</zorder>
+   <zorder>add_slide_btn</zorder>
+   <zorder>remove_slide_btn</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>792</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
